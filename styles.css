@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('assets/Press Start 2P.ttf') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  /*width: 100vw;
+  height: 100vh;*/
+  user-select: none;
+  -webkit-app-region: drag;
+  border-radius: 20px;
+  margin: 0;
+  background: transparent;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 214px; /* match your image */
+    height: 260px; /* adjust based on actual PNG */
+    padding: 0; /* remove padding */
+    aspect-ratio: 214 / 260;
+    background-image: url("assets/Rectangle_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.title {
+    font-family: 'Press Start 2P', monospace;  /* Changed from 'Pixeboy' */
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#day, #month {
+    font-family: 'Press Start 2P', monospace;  /* Changed from 'Pixeboy' */
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+.title {
+    display: flex;
+    width: 157px;
+    aspect-ratio: 157/27;
+    padding: 0.25rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    border: 1px solid #C079FF;
+    background: rgba(210, 164, 255, 0.40);
+    color: var(--white, #FFF);
+    /* text styling */
+    font-family: 'Press Start 2P', monospace;  /* Changed from Pixeboy */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#calendar { 
+    display: flex;
+    width: 180px;  /* Set specific width to fit inside */
+    height: 160px;  /* Set specific height to fit inside */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image: url("assets/Rectangle_1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#day {
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--mid-purple, #B58CD9);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; 
+    letter-spacing: 2px;
+
+    display: flex;
+    width: 11.25rem;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#month {
+
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #B58CD9;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 1px;
+
+    width: 8.125rem;
+
+}
